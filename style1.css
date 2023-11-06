@@ -1,0 +1,119 @@
+*{
+	margin:0;
+	padding:0;
+}
+.header{
+	min-height:100vh;
+	width:100%;
+	
+	background-image:url(images/ban.jpg);
+	background-position:center;
+	background-size:cover;
+	position:relative;
+}
+nav{
+	display:flex;
+	padding:-2% -6%;
+	justify-content:space-between;
+	align-items:center;
+}
+nav img{
+	width:130px;
+}
+.nav-links{
+	flex:1;
+	text-align:right;
+}
+.nav-links ul li{
+	list-style:none;
+	display:inline-block;
+	padding:12px 12px;
+	position:relative;
+}
+.nav-links ul li a{
+	color:black;
+	text-decoration:none;
+	font-size:20px;
+}
+.nav-links ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:#f44336;
+	display:block;
+	margin:auto;
+	transition:0.5s;
+}
+.nav-links ul li:hover::after{
+	width:100%;
+}
+.text-box{
+	width:90%;
+	color:white;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+.text-box h1{
+	font-size:62px;
+}
+.text-box h2{
+	font-size:48px;
+}
+.text-box p{
+	margin/;10px 0 40px;
+	font-size:25px;
+	color:white;
+}
+.hero-btn{
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	border:1px solid white;
+	padding:12px 34px;
+	font-size:20px;
+	background:transparent;
+	position:relative;
+	cursor:pointer;
+}
+.hero-btn:hover{
+	border:1px solid white;
+	background:pink;
+	transition:1s;
+}
+.events{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.events-col{
+    flex-basis: 30%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 50%;
+    padding: 20px 14px;
+    box-sizing:border-box  ;
+
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.events-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,2);
+}
+.events-col img{
+    width: 100%;
+    border-radius: 10px;88
+    display: block;
+}

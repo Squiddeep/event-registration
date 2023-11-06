@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>login and register forms</title>
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="si()">sign in</button>
+                    <button type="button" class="toggle-btn" onclick="su()">sign up</button>
+                </div>
+                <div class="social-icons">
+                    <img src="images/fb.png">
+                    <img src="images/tw.png">
+                    <img src="images/gp.png">
+                </div>
+                <form id="signin" class="input-group">
+                <input type="email" class="input-field" placeholder="email id" required>
+                <input type="text" class="input-field" placeholder="password" required>
+                <input type="checkbox" class="chech-box"><span>remember password</span>
+                <input type="submit" class="submit-btn">Sign in</button>
+            </form>
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="your usn" required>
+                <input type="text" class="input-field" placeholder="your name" required>
+                <input type="email" class="input-field" placeholder="your email" required>
+                <input type="number" class="input-field" placeholder="your phonenumber" required>
+                <input type="text" class="input-field" placeholder="yourpassword" required>
+                <input type="checkbox" class="chech-box"><span>i agree to the terms and conditions</span>
+                <input type="submit" class="submit-btn">Sign up</button>
+            </form>
+            </div>
+        </div>
+        <script>
+        var x=document.getElementById("signin");
+        var y=document.getElementById("signup");
+        var z=document.getElementById("btn");
+
+        function su(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function si(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+
+
+        </script>
+    </body>
+</html>
